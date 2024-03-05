@@ -1,7 +1,102 @@
-@article{gregor2015draw,
-  title={DRAW: A recurrent neural network for image generation},
-  author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
-  journal={arXiv preprint, arXiv:1502.04623},
-  year={2015},
-  url={https://arxiv.org/pdf/1502.04623.pdf}
-}
+%% This BibTeX bibliography file was created using BibDesk.
+%% https://bibdesk.sourceforge.io/
+
+%% Created for Rhincodon at 2024-03-05 13:14:24 -0600 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@inproceedings{10.1145/3340531.3412738,
+	abstract = {The availability of high-frequency trade data has made it possible for the intraday forecast of price patterns. With the help of technical indicators, recent studies have shown that LSTM based deep learning models are able to predict price directions (a binary classification problem) with performance better than a random guess. However, only naive recurrent networks were adopted, and these works did not compare with the tools used by finance practitioners. Our experiments show that GARCH beats their LSTM models by a large margin.We propose to adopt an autoregressive recurrent network instead so that the loss of the prediction at every time step contributes to the model training; we also treat a rich set of technical indicators at each time step as covariates to enhance the model input. Finally, we treat the problem of price pattern forecast as a regression problem on the price itself; even for price direction prediction, we show that our performance is much better than if we model the problem as binary classification. We show that only when all these designs are adopted, an LSTM model can beat GARCH (and by a large margin).This work corrects the poor use of LSTM networks in recent studies, and provides "the" baseline that is able to fully unleash the power of LSTM for future work to compare with. Moreover, since our model is a price regressor with very good prediction performance, it can serve as a valuable tool for designing trading strategies (including day trading). Our model has been used by quantitative analysts in Freddie Mac for over one quarter, and is found to be more effective than traditional GARCH variants in market prediction.},
+	address = {New York, NY, USA},
+	author = {Gu, Yuechun and Yan, Da and Yan, Sibo and Jiang, Zhe},
+	booktitle = {Proceedings of the 29th ACM International Conference on Information \& Knowledge Management},
+	date-added = {2024-03-05 13:14:23 -0600},
+	date-modified = {2024-03-05 13:14:23 -0600},
+	doi = {10.1145/3340531.3412738},
+	isbn = {9781450368599},
+	keywords = {technical indicators, stock price, recurrent neural network, high-frequency, garch, autoregressive},
+	location = {Virtual Event, Ireland},
+	numpages = {8},
+	pages = {2485--2492},
+	publisher = {Association for Computing Machinery},
+	series = {CIKM '20},
+	title = {Price Forecast with High-Frequency Finance Data: An Autoregressive Recurrent Neural Network Model with Technical Indicators},
+	url = {https://doi.org/10.1145/3340531.3412738},
+	year = {2020},
+	Bdsk-Url-1 = {https://doi.org/10.1145/3340531.3412738}}
+
+@misc{sharma2022comparative,
+	archiveprefix = {arXiv},
+	author = {Sagar Sharma and Yuechun Gu and Keke Chen},
+	date-added = {2024-03-05 13:12:38 -0600},
+	date-modified = {2024-03-05 13:12:38 -0600},
+	eprint = {2301.00252},
+	primaryclass = {cs.CR},
+	title = {A Comparative Study of Image Disguising Methods for Confidential Outsourced Learning},
+	year = {2022}}
+
+@article{10.1145/3609506,
+	abstract = {Large training data and expensive model tweaking are standard features of deep learning with images. As a result, data owners often utilize cloud resources to develop large-scale complex models, which also raises privacy concerns. Existing cryptographic solutions for training deep neural networks (DNNs) are too expensive, cannot effectively utilize cloud GPU resources, and also put a significant burden on client-side pre-processing. This article presents an image disguising approach: DisguisedNets, which allows users to securely outsource images to the cloud and enables confidential, efficient GPU-based model training. DisguisedNets uses a novel combination of image blocktization, block-level random permutation, and block-level secure transformations: random multidimensional projection (RMT) or AES pixel-level encryption (AES) to transform training data. Users can use existing DNN training methods and GPU resources without any modification to training models with disguised images. We have analyzed and evaluated the methods under a multi-level threat model and compared them with another similar method---InstaHide. We also show that the image disguising approach, including both DisguisedNets and InstaHide, can effectively protect models from model-targeted attacks.},
+	address = {New York, NY, USA},
+	articleno = {47},
+	author = {Chen, Keke and Gu, Yuechun and Sharma, Sagar},
+	date-added = {2024-03-05 13:12:10 -0600},
+	date-modified = {2024-03-05 13:12:10 -0600},
+	doi = {10.1145/3609506},
+	issn = {1533-5399},
+	issue_date = {August 2023},
+	journal = {ACM Trans. Internet Technol.},
+	keywords = {Outsourced deep learning, confidential computing, image disguising},
+	month = {aug},
+	number = {3},
+	numpages = {26},
+	publisher = {Association for Computing Machinery},
+	title = {DisguisedNets: Secure Image Outsourcing for Confidential Model Training in Clouds},
+	url = {https://doi.org/10.1145/3609506},
+	volume = {23},
+	year = {2023},
+	Bdsk-Url-1 = {https://doi.org/10.1145/3609506}}
+
+@inproceedings{10.1145/3576915.3624364,
+	abstract = {Deep learning training involves large training data and expensive model tweaking, for which cloud GPU resources can be a popular option. However, outsourcing data often raises privacy concerns. The challenge is to preserve data and model confidentiality without sacrificing GPU-based scalable training and low-cost client-side preprocessing, which is difficult for conventional cryptographic solutions to achieve. This demonstration shows a new approach, image disguising, represented by recent work: DisguisedNets, NeuraCrypt, and InstaHide, which aim to securely transform training images while still enabling the desired scalability and efficiency. We present an interactive system for visually and comparatively exploring these methods. Users can view disguised images, note low client-side processing costs, and observe the maintained efficiency and model quality during server-side GPU-accelerated training. This demo aids researchers and practitioners in swiftly grasping the advantages and limitations of image-disguising methods.},
+	address = {New York, NY, USA},
+	author = {Gu, Yuechun and Sharma, Sagar and Chen, Keke},
+	booktitle = {Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+	date-added = {2024-03-05 13:11:38 -0600},
+	date-modified = {2024-03-05 13:11:38 -0600},
+	doi = {10.1145/3576915.3624364},
+	isbn = {9798400700507},
+	keywords = {gpu-acceleration, instance encoding, privacy-preserving machine learning},
+	location = {<conf-loc>, <city>Copenhagen</city>, <country>Denmark</country>, </conf-loc>},
+	numpages = {3},
+	pages = {3679--3681},
+	publisher = {Association for Computing Machinery},
+	series = {CCS '23},
+	title = {Demo: Image Disguising for Scalable GPU-accelerated&nbsp;Confidential Deep Learning},
+	url = {https://doi.org/10.1145/3576915.3624364},
+	year = {2023},
+	Bdsk-Url-1 = {https://doi.org/10.1145/3576915.3624364}}
+
+@inproceedings{gu2023gan,
+	author = {Gu, Yuechun and Chen, Keke},
+	booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+	date-added = {2024-03-05 13:11:16 -0600},
+	date-modified = {2024-03-05 13:11:16 -0600},
+	number = {12},
+	pages = {14214--14222},
+	title = {GAN-based domain inference attack},
+	volume = {37},
+	year = {2023}}
+
+@misc{gu2023adaptive,
+	archiveprefix = {arXiv},
+	author = {Yuechun Gu and Keke Chen},
+	date-added = {2024-03-05 13:10:30 -0600},
+	date-modified = {2024-03-05 13:10:30 -0600},
+	eprint = {2312.15088},
+	primaryclass = {cs.LG},
+	title = {Adaptive Domain Inference Attack},
+	year = {2023}}
