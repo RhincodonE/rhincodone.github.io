@@ -1,4 +1,4 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a fourth-year Ph.D. student under the guidance of Dr. Keke Chen, specializing in areas such as differential privacy, confidential computation, machine unlearning, and more. Anticipating graduation in December 2024, I am actively seeking job opportunities. Feel free to reach out if you have any relevant opportunities or inquiries.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
