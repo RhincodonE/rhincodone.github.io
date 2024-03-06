@@ -3,8 +3,8 @@ layout: post
 title: A Foundation of Differential Privacy
 date: 2024-3-5
 description: In this post, I'll generally introduce what is differential privacy with an example
-tags: formatting math
-categories: sample-posts
+tags: DP_1
+categories: DP
 related_posts: false
 ---
 
