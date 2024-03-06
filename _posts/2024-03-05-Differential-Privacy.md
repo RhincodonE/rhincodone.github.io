@@ -3,8 +3,8 @@ layout: post
 title: A Foundation of Differential Privacy
 date: 2024-3-5
 description: In this post, I'll generally introduce what is differential privacy with an example
-tags: DP_1
-categories: DP
+tags: DP
+categories: Differential privacy
 related_posts: false
 ---
 ## Introduction with an example
@@ -15,12 +15,11 @@ So, how does DP achieve this? Let's take a simple example:
 
 Suppose you are part of a company that wants to calculate the average salary of its employees without revealing the salary of any specific employee. The company collects the following data:
 
-\begin{equation}
-\text{Employee A:} & \$60,000 \\
-\text{Employee B:} & \$70,000 \\
-\text{Employee C:} & \$80,000 \\
-\text{Employee D:} & \$90,000 \\
-\end{equation}
+*Employee A: $60,000*
+*Employee B: $70,000*
+*Employee C: $80,000*
+*Employee D: $90,000* 
+
 
 **Non-Differentially Private Calculation:**
 

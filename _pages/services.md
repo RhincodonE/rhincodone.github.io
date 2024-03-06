@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /services/
-title: services
+title: SERVICES
 description:
 nav: True
 nav_order: 7
@@ -11,4 +11,5 @@ nav_order: 7
 2023: Sub-reviewer for IEEE BigData'23
 
 2022: Sub-reviewer for IEEE BigData'22
+
       Sub-reviewer for AAAI'23
