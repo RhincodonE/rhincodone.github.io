@@ -9,6 +9,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>+1 (414) 285-8673</p>
+    <p>ethan.gu@marquette.edu</p>
     <p>Milwaukee,WI</p>
 
 news: true # includes a list of news items
