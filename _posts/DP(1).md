@@ -15,7 +15,6 @@ So, how does DP achieve this? Let's take a simple example:
 Suppose you are part of a company that wants to calculate the average salary of its employees without revealing the salary of any specific employee. The company collects the following data:
 
 \begin{equation}
-
 \text{Employee A:} & \$60,000 \\
 \text{Employee B:} & \$70,000 \\
 \text{Employee C:} & \$80,000 \\
