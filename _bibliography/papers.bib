@@ -32,7 +32,7 @@
 
 @misc{sharma2022comparative,
   abstract ={Large training data and expensive model tweaking are standard features of deep learning for images. As a result, data owners often utilize cloud resources to develop large-scale complex models, which raises privacy concerns. Existing solutions are either too expensive to be practical or do not sufficiently protect the confidentiality of data and models. In this paper, we study and compare novel \emph{image disguising} mechanisms, DisguisedNets and InstaHide, aiming to achieve a better trade-off among the level of protection for outsourced DNN model training, the expenses, and the utility of data. DisguisedNets are novel combinations of image blocktization, block-level random permutation, and two block-level secure transformations: random multidimensional projection (RMT) and AES pixel-level encryption (AES). InstaHide is an image mixup and random pixel flipping technique. We have analyzed and evaluated them under a multi-level threat model. RMT provides a better security guarantee than InstaHide, under the Level-1 adversarial knowledge with well-preserved model quality. In contrast, AES provides a security guarantee under the Level-2 adversarial knowledge, but it may affect model quality more. The unique features of image disguising also help us to protect models from model-targeted attacks. We have done an extensive experimental evaluation to understand how these methods work in different settings for different datasets.}
-	archiveprefix = {arXiv},
+	archivePrefix = {arXiv},
 	author = {Sagar Sharma and Yuechun Gu and Keke Chen},
 	date-added = {2024-03-05 13:12:38 -0600},
 	date-modified = {2024-03-05 13:12:38 -0600},
@@ -107,7 +107,7 @@
 
 @misc{gu2023adaptive,
   abstract = {As deep neural networks are increasingly deployed in sensitive application domains, such as healthcare and security, it's necessary to understand what kind of sensitive information can be inferred from these models. Existing model-targeted attacks all assume the attacker has known the application domain or training data distribution, which plays an essential role in successful attacks. Can removing the domain information from model APIs protect models from these attacks? This paper studies this critical problem. Unfortunately, even with minimal knowledge, i.e., accessing the model as an unnamed function without leaking the meaning of input and output, the proposed adaptive domain inference attack (ADI) can still successfully estimate relevant subsets of training data. We show that the extracted relevant data can significantly improve, for instance, the performance of model-inversion attacks. Specifically, the ADI method utilizes a concept hierarchy built on top of a large collection of available public and private datasets and a novel algorithm to adaptively tune the likelihood of leaf concepts showing up in the unseen training data. The ADI attack not only extracts partial training data at the concept level, but also converges fast and requires much fewer target-model accesses than another domain inference attack, GDI.},
-	archiveprefix = {arXiv},
+	archivePrefix = {arXiv},
 	author = {Yuechun Gu and Keke Chen},
 	date-added = {2024-03-05 13:10:30 -0600},
 	date-modified = {2024-03-05 13:10:30 -0600},
