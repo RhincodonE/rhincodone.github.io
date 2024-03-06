@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
@@ -17,7 +18,3 @@ social: true # includes social icons at the bottom of the page
 ---
 
 I am a fourth-year Ph.D. student under the guidance of Dr. Keke Chen, specializing in areas such as differential privacy, confidential computation, machine unlearning, and more. Anticipating graduation in December 2024, I am actively seeking job opportunities. Feel free to reach out if you have any relevant opportunities or inquiries.
-<<<<<<< HEAD
-test
-=======
->>>>>>> origin/master
