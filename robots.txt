@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://RhincodonE.github.io/sitemap.xml
+Sitemap: https://yuechungu.github.io/sitemap.xml
