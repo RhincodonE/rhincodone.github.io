@@ -33,10 +33,10 @@ Although MIA has been deeply investigated in small-scale networks, in the era of
 3. **Zlib Entropy [3]:** Calibrates the sample’s loss under the target model using the sample’s zlib compression size.
    - Equation: $$f(x;M) = \frac{L(x;M)}{zlib(x)}$$
 
-5. **Min-k% Prob [5]:** Uses the $$k\%$$ of tokens with the lowest likelihoods to compute a score instead of averaging over all token probabilities as in loss.
+5. **Min-k% Prob [4]:** Uses the $$k\%$$ of tokens with the lowest likelihoods to compute a score instead of averaging over all token probabilities as in loss.
    - Equation: $$f(x;M) = \frac{1}{|min-k(x)|} \sum_{x_i \in min-k(x)} -\log(p(x_i | x_1, ..., x_{i-1}))$$
 
-4. **Neighborhood Attack [4]:** Uses an estimate of the curvature of the loss function at a given sample, computed by perturbing the target sequence to create $$n$$ 'neighboring' points, and comparing the loss of the target $$x$$, with its neighbors $$\tilde{x}$$.
+4. **Neighborhood Attack [5]:** Uses an estimate of the curvature of the loss function at a given sample, computed by perturbing the target sequence to create $$n$$ 'neighboring' points, and comparing the loss of the target $$x$$, with its neighbors $$\tilde{x}$$.
    - Equation: $$f(x;M) = L(x;M) - \frac{1}{n} \sum_{i=1}^{n} L(\tilde{x}_i;M)$$
 
 
@@ -73,9 +73,9 @@ Several differentially private fine-tuning techniques have been developed for La
 
 [3] Carlini, N., Tramer, F., Wallace, E., Jagielski, M., Herbert-Voss, A., Lee, K., ... & Raffel, C. (2021). Extracting training data from large language models. In 30th USENIX Security Symposium (USENIX Security 21) (pp. 2633-2650).
 
-[4] Mattern, J., Mireshghallah, F., Jin, Z., Schölkopf, B., Sachan, M., & Berg-Kirkpatrick, T. (2023). Membership inference attacks against language models via neighbourhood comparison. arXiv preprint arXiv:2305.18462.
+[4] Shi, W., Ajith, A., Xia, M., Huang, Y., Liu, D., Blevins, T., ... & Zettlemoyer, L. (2023). Detecting pretraining data from large language models. arXiv preprint arXiv:2310.16789.
 
-[5] Shi, W., Ajith, A., Xia, M., Huang, Y., Liu, D., Blevins, T., ... & Zettlemoyer, L. (2023). Detecting pretraining data from large language models. arXiv preprint arXiv:2310.16789.
+[5] Mattern, J., Mireshghallah, F., Jin, Z., Schölkopf, B., Sachan, M., & Berg-Kirkpatrick, T. (2023). Membership inference attacks against language models via neighbourhood comparison. arXiv preprint arXiv:2305.18462.
 
 [6] https://github.com/iamgroot42/mimir
 
