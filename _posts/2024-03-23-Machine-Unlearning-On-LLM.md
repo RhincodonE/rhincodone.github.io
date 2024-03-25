@@ -25,32 +25,19 @@ Although MIA has been deeply investigated in small-scale networks, in the era of
 {% include figure.liquid loading="eager" path="assets/img/MIALLM.png" class="img-fluid rounded z-depth-1" %}
 
 1. **LOSS [2]:** Considers the model’s computed loss over the target sample.
-   \begin{equation}
-   f(x;M) = L(x;M)$$
-   \end{equation}
+   \begin{equation}f(x;M) = L(x;M)\end{equation}
 
 2. **Reference-based [3]:** Attempts to improve the precision of the LOSS attack and reduce the false negative rate by accounting for the intrinsic complexity of the target point $$x$$ by calibrating $$L(x;M)$$, with respect to another reference model $$(M_{ref})$$, which is trained on data from the same distribution as $$D$$, but not necessarily the same data.
-   \begin{equation}
-   f(x;M) = L(x;M) - L(x;M_{ref})
-   \end{equation}
+   \begin{equation}f(x;M) = L(x;M) - L(x;M_{ref})\end{equation}
 
 3. **Zlib Entropy [3]:** Calibrates the sample’s loss under the target model using the sample’s zlib compression size.
-   \begin{equation}
-   f(x;M) = \frac{L(x;M)}{zlib(x)}
-   \end{equation}
+   \begin{equation}f(x;M) = \frac{L(x;M)}{zlib(x)}\end{equation}
 
 4. **Min-k% Prob [4]:** Uses the $$k\%$$ of tokens with the lowest likelihoods to compute a score instead of averaging over all token probabilities as in loss.
-   \begin{equation}
-   f(x;M) = \frac{1}{|min-k(x)|} \sum_{x_i \in min-k(x)} -\log(p(x_i | x_1, ..., x_{i-1}))
-   \end{equation}
+   \begin{equation}f(x;M) = \frac{1}{|min-k(x)|} \sum_{x_i \in min-k(x)} -\log(p(x_i | x_1, ..., x_{i-1}))\end{equation}
 
 5. **Neighborhood Attack [5]:** Uses an estimate of the curvature of the loss function at a given sample, computed by perturbing the target sequence to create $$n$$ 'neighboring' points, and comparing the loss of the target $$x$$, with its neighbors $$\tilde{x}$$.
-   \begin{equation}
-   f(x;M) = L(x;M) - \frac{1}{n} \sum_{i=1}^{n} L(\tilde{x}_i;M)
-   \end{equation}
-   
-
-
+   \begin{equation}f(x;M) = L(x;M) - \frac{1}{n} \sum_{i=1}^{n} L(\tilde{x}_i;M)\end{equation}
 
 ## Why MIA cares ##
 
