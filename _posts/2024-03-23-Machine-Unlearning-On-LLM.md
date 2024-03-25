@@ -37,7 +37,7 @@ Although MIA has been deeply investigated in small-scale networks, in the era of
    - Equation: $$f(x;M) = L(x;M) - \frac{1}{n} \sum_{i=1}^{n} L(\tilde{x}_i;M)$$
 
 5. **Min-k% Prob [5]:** Uses the $$k\%$$ of tokens with the lowest likelihoods to compute a score instead of averaging over all token probabilities as in loss.
-   - Equation: $$f(x;M) = \frac{1}{|min-k(x)|} \sum_{x_i \in min-k(x)} -\log(p(x_i | x_1, ..., x_{i-1}))$$
+   - Equation: $$f(x;M) = \frac{1}{|\text{min-k}(x)|} \sum_{x_i \in \text{min-k}(x)} -\log(p(x_i | x_1, ..., x_{i-1}))$$
 
 ## Why MIA cares ##
 
