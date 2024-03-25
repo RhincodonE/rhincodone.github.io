@@ -25,19 +25,19 @@ Although MIA has been deeply investigated in small-scale networks, in the era of
 {% include figure.liquid loading="eager" path="assets/img/MIALLM.png" class="img-fluid rounded z-depth-1" %}
 
 1. **LOSS [2]:** Considers the model’s computed loss over the target sample.
-   - Equation: $$f(x;M) = L(x;M)$$
+   - Equation: $f(x;M)=L(x;M)$
 
 2. **Reference-based [3]:** Attempts to improve the precision of the LOSS attack and reduce the false negative rate by accounting for the intrinsic complexity of the target point $$x$$ by calibrating $$L(x;M)$$, with respect to another reference model $$(M_{ref})$$, which is trained on data from the same distribution as $$D$$, but not necessarily the same data.
-   - Equation: $$f(x;M) = L(x;M) - L(x;M_{ref})$$
+   - Equation: $f(x;M)=L(x;M)-L(x;M_{ref})$
 
 3. **Zlib Entropy [3]:** Calibrates the sample’s loss under the target model using the sample’s zlib compression size.
-   - Equation: $$f(x;M) = \frac{L(x;M)}{zlib(x)}$$
+   - Equation: $f(x;M)=\frac{L(x;M)}{zlib(x)}$
 
 4. **Neighborhood Attack [4]:** Uses an estimate of the curvature of the loss function at a given sample, computed by perturbing the target sequence to create $$n$$ 'neighboring' points, and comparing the loss of the target $$x$$, with its neighbors $$\tilde{x}$$.
-   - Equation: $$f(x;M) = L(x;M) - \frac{1}{n} \sum_{i=1}^{n} L(\tilde{x}_i;M)$$
+   - Equation: $f(x;M)=L(x;M)-\frac{1}{n}\sum_{i=1}^{n}L(\tilde{x}_i;M)$
 
 5. **Min-k% Prob [5]:** Uses the $$k\%$$ of tokens with the lowest likelihoods to compute a score instead of averaging over all token probabilities as in loss.
-   - Equation: $$f(x;M) = \frac{1}{|\text{min-k}(x)|} \sum_{x_i \in \text{min-k}(x)} -\log(p(x_i | x_1, ..., x_{i-1}))$$
+   - Equation: $f(x;M)=\frac{1}{|\text{min-k}(x)|}\sum_{x_i\in\text{min-k}(x)} -\log(p(x_i|x_1, ..., x_{i-1}))$
 
 ## Why MIA cares ##
 
@@ -57,9 +57,9 @@ Given these issues, the future and practical relevance of MIA are subjects of on
 
 ## Potential of MIA ##
 
-Recent research highlights the potential of Membership Inference Attacks (MIA) for auditing the privacy of algorithms designed for differential privacy. Differential privacy provides a solid guarantee of privacy, leading to the proposal of differentially private machine learning algorithms, such as DP-SGD and DP-Adam. Users set a theoretical privacy budget, $$\epsilon_{theory}$$, and a relaxation parameter, $$\delta$$, aiming for the trained model to achieve $$(\epsilon_{theory},\delta)$$-differential privacy. However, assessing a model's actual privacy level has been challenging, as differential privacy offers a worst-case guarantee, suggesting that the practical privacy level might be more stringent (practical $$\epsilon$$ is smaller than $$\epsilon_{theory}$$).
+Recent research highlights the potential of Membership Inference Attacks (MIA) for auditing the privacy of algorithms designed for differential privacy. Differential privacy provides a solid guarantee of privacy, leading to the proposal of differentially private machine learning algorithms, such as DP-SGD and DP-Adam. Users set a theoretical privacy budget, $\epsilon_{theory}$, and a relaxation parameter, $\delta$, aiming for the trained model to achieve $(\epsilon_{theory},\delta)$-differential privacy. However, assessing a model's actual privacy level has been challenging, as differential privacy offers a worst-case guarantee, suggesting that the practical privacy level might be more stringent (practical $$\epsilon$$ is smaller than $\epsilon_{theory}$).
 
-Studies now indicate that MIA can estimate the lower bound of the practical $$\epsilon$$, denoted as $$\epsilon_{LB}$$. This suggests the actual $$\epsilon$$ for a model's privacy lies within the range $$[\epsilon_{LB},\epsilon_{theory}]$$, providing a clearer picture of its privacy assurances. This insight underscores MIA's role in evaluating and ensuring the privacy of differentially private machine learning algorithms[8][9][10].
+Studies now indicate that MIA can estimate the lower bound of the practical $\epsilon$, denoted as $\epsilon_{LB}$. This suggests the actual $\epsilon$ for a model's privacy lies within the range $[\epsilon_{LB},\epsilon_{theory}]$, providing a clearer picture of its privacy assurances. This insight underscores MIA's role in evaluating and ensuring the privacy of differentially private machine learning algorithms[8][9][10].
 
 Several differentially private fine-tuning techniques have been developed for Large Language Models (LLMs) to secure their differential privacy [11][12]. Despite these advancements, there remains a lack of research into the auditing of these models' actual privacy levels. Therefore, a valuable direction for future work could be to employ Membership Inference Attacks (MIAs) to assess and audit the privacy of LLMs that have undergone differential privacy fine-tuning. This approach could provide a clearer understanding of how private the LLMs really are, beyond theoretical guarantees.
 
