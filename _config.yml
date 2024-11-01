@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Yuechun(Ethan)
+first_name: Yuechun (Ethan)
 last_name: Gu
 email: ygu2@umbc.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -280,7 +280,7 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 
 scholar:
   last_name: [Gu]
-  first_name: [Yuechun(Ethan)]
+  first_name: [Yuechun (Ethan)]
 
   style: apa
   locale: en
