@@ -115,3 +115,25 @@
 	primaryclass = {cs.LG},
 	title = {Adaptive Domain Inference Attack},
 	year = {2023}}
+
+@misc{gu2024ftprivacyscorepersonalizedprivacyscoring,
+abstract={Training data privacy has been a top concern in AI modeling. While methods like differentiated private learning allow data contributors to quantify acceptable privacy loss, model utility is often significantly damaged. In practice, controlled data access remains a mainstream method for protecting data privacy in many industrial and research environments. In controlled data access, authorized model builders work in a restricted environment to access sensitive data, which can fully preserve data utility with reduced risk of data leak. However, unlike differential privacy, there is no quantitative measure for individual data contributors to tell their privacy risk before participating in a machine learning task. We developed the demo prototype FT-PrivacyScore to show that it's possible to efficiently and quantitatively estimate the privacy risk of participating in a model fine-tuning task. The demo source code will be available at \url{this https URL}.},
+      title={FT-PrivacyScore: Personalized Privacy Scoring Service for Machine Learning Participation}, 
+      author={Yuechun Gu and Jiajie He and Keke Chen},
+      year={2024},
+      eprint={2410.22651},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.22651}, 
+}
+
+@misc{gu2024calibratingpracticalprivacyrisks,
+abstract = {Differential privacy quantifies privacy through the privacy budget ϵ, yet its practical interpretation is complicated by variations across models and datasets. Recent research on differentially private machine learning and membership inference has highlighted that with the same theoretical ϵ setting, the likelihood-ratio-based membership inference (LiRA) attacking success rate (ASR) may vary according to specific datasets and models, which might be a better indicator for evaluating real-world privacy risks. Inspired by this practical privacy measure, we study the approaches that can lower the attacking success rate to allow for more flexible privacy budget settings in model training. We find that by selectively suppressing privacy-sensitive features, we can achieve lower ASR values without compromising application-specific data utility. We use the SHAP and LIME model explainer to evaluate feature sensitivities and develop feature-masking strategies. Our findings demonstrate that the LiRA ASRM on model M can properly indicate the inherent privacy risk of a dataset for modeling, and it's possible to modify datasets to enable the use of larger theoretical ϵ settings to achieve equivalent practical privacy protection. We have conducted extensive experiments to show the inherent link between ASR and the dataset's privacy risk. By carefully selecting features to mask, we can preserve more data utility with equivalent practical privacy protection and relaxed ϵ settings. The implementation details are shared online at the provided GitHub URL \url{this https URL}.},
+      title={Calibrating Practical Privacy Risks for Differentially Private Machine Learning}, 
+      author={Yuechun Gu and Keke Chen},
+      year={2024},
+      eprint={2410.22673},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.22673}, 
+}
