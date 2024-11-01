@@ -12,7 +12,7 @@
   type: time_table
   contents:
     - title: Ph.D.
-      institution: University of MAryland, Baltimore County
+      institution: University of Maryland, Baltimore County
       year: 2024-2025
       description:
         - Work with Dr.Keke Chen on privacy problems in ML.
