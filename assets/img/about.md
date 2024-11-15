@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: ABOUT
 permalink: /
 subtitle: <a href='https://sites.google.com/view/kekechen/researchtaic-lab?authuser=0'>Trustworthy and Intelligent Computing Lab (TAIC)</a>
 
