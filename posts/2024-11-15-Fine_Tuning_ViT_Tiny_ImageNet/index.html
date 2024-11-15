@@ -254,7 +254,9 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="n">torch</span><span class="p">.</span><span class="nf">save</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="nf">state_dict</span><span class="p">(),</span> <span class="sh">'</span><span class="s">./models/best_vit_tiny_imagenet.pth</span><span class="sh">'</span><span class="p">)</span>
         <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">New best model saved with accuracy: </span><span class="si">{</span><span class="n">best_acc</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">%</span><span class="sh">"</span><span class="p">)</span>
+
 <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Training complete. Best validation accuracy:</span><span class="sh">"</span><span class="p">,</span> <span class="n">best_acc</span><span class="p">)</span>
+
 <span class="n">writer</span><span class="p">.</span><span class="nf">close</span><span class="p">()</span>
 
 <span class="p">```</span>
