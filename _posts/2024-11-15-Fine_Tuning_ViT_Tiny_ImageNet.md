@@ -126,7 +126,8 @@ The code for this implementation, including the preprocessing and training pipel
 - tqdm
 
 ## Code
-{% highlight python %}
+````markdown
+```python
 
 import os
 import shutil
@@ -382,7 +383,8 @@ for epoch in range(num_epochs):
         else:
             torch.save(model.state_dict(), './models/best_vit_tiny_imagenet.pth')
         print(f"New best model saved with accuracy: {best_acc:.2f}%")
-{% endhighlight %}
 print("Training complete. Best validation accuracy:", best_acc)
 writer.close()
 
+```
+````
