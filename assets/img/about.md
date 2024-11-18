@@ -12,7 +12,7 @@ profile:
     <p>Phone: +1 (414) 285-8673</p>
     <p>Work Email: ygu2 [at] umbc [dot] edu</p>
     <p>Personal Email: ethan.gychun [at] outlook [dot] com</p>
-    <p>Marquette University</p>
+    <p>UMBC</p>
     <p>Tutor:<a href='https://sites.google.com/view/kekechen/home?authuser=0'>Dr.Keke Chen</a><p>
 
 news: true # includes a list of news items
