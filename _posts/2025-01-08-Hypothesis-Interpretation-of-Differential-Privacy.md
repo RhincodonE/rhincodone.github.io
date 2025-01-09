@@ -10,7 +10,7 @@ related_posts: false
 
 # Hypothesis Interpretation of Differential Privacy
 
-##Content
+## Content
 
 - **Basic definition of differential privacy**
 - **Hypothesis interpretation of differential privacy**
@@ -20,7 +20,8 @@ related_posts: false
 
 ---
 
-##Basic definition of differential privacy
+## Basic definition of differential privacy
+
 Let's start with the basic definition of differential privacy. Specifically, we only focus on the widely adopted relaxed $$(\epsilon,\delta)-\text{differential privacy}$$.
 
 **Definition 1:** $$M$$ is $$(\epsilon,\delta)-\text{differential privacy}$$ if, for all neighboring data $$D_0$$ and $$D_1$$ that differ in at most one sample, and for all measurable sets $$\mathcal{O}$$,
@@ -150,7 +151,7 @@ Combining equations 1, 2, 9, and 10, we can derive equations 5, and 6.
 
 
 
-###Privacy Region
+### Privacy Region
 
 Now we can define a privacy region for $$(\epsilon,\delta)-\text{differential privacy}$$ as :
 
@@ -215,6 +216,7 @@ For simplicity we show the relationship between the confusion matrix and type I 
 | **False Positive Rate (FPR)** | $$\text{FPR} = P(M(D_0) \in S)$$                                                                | Type I Error $$\alpha$$       |
 | **False Negative Rate (FNR)** | $$\text{FNR} = P(M(D_1) \in \bar{S})$$                                                          | Type II Error $$\beta$$      |
 | **True Negative Rate (TNR)** | $$\text{TNR} = 1 - \text{FPR}$$                                                                   | Correct rejection $$1-\alpha$$  |
+---
 
 ### MIA audits implementation of differential privacy
 
