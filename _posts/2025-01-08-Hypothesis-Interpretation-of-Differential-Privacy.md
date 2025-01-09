@@ -264,6 +264,7 @@ Imagine you're conducting a **privacy audit** on a differentially private algori
 
 **Type I Error ($$ \alpha $$)**
 
+
 **Type II Error ($$ \beta $$)**
 
 To **accurately bound** $$ \alpha $$ and $$ \beta $$, ensuring the privacy guarantees ($$ \varepsilon $$, $$ \delta $$) hold with high confidence. This requires not just single estimates of TPR and FPR but **statistical bounds** that account for uncertainty due to finite sample sizes.
