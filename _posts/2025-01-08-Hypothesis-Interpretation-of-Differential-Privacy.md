@@ -210,6 +210,7 @@ $$
 
 For simplicity we show the relationship between the confusion matrix and type I and II errors in the following table:
 
+---
 | Metric                     | Definition                                                                                         | Error Type          |
 |----------------------------|----------------------------------------------------------------------------------------------------|---------------------|
 | **True Positive Rate (TPR)** | $$\text{TPR} = 1 - \text{FNR}$$                                                                   | Correct detection  $$1-\beta$$ |
