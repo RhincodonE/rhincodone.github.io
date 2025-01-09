@@ -45,6 +45,8 @@ This "indistinguishability", a binary classification problem, can be naturally d
 
 ## Hypothesis interpretation of differential privacy
 
+---
+
 Based on the "indistinguishablity" on the $$M(D_0)$$ and $$M(D_1)$$, we set up two hypothesis,
 
 $$
@@ -60,6 +62,8 @@ $$
 Now let's interpret what benefits we can get from it. We start with two errors in the basic hypothesis testing.
 
 ### Type I Error (significants level
+
+
 This occurs when the null hypothesis ($$H_0$$) is **rejected** even though it is true, i.e., M is predicted did not use $$D_0$$ when it actually did. The probability of this error is defined as:
 
 $$
@@ -78,6 +82,8 @@ $$
 That is, if we repeated the same test many times under conditions where $$H_0$$ is actually true, we'd expect to falsely reject $$H_0$$ about $$\alpha \times 100\%$$ of time. Thus, $$\alpha$$ control how "strict" our test is in claiming a significant result
 
 ### Type II Error
+
+
 This occurs when the null hypothesis ($$H_0$$) is **not rejected** even though it is false, i.e., M is predicted to use $$D_0$$ when it actually did not. The probability of this error is defined as:
 
 $$
@@ -91,6 +97,7 @@ Since $$\beta$$ is the probability of mistakenly accepting the null hypothesis, 
 
 
 ### Differential Privacy in Terms of Hypothesis Testing
+
 
 Here we turn to why we want to use a hypothesis to represent differential privacy. Actually, the hypothesis interpretation of differential privacy condition imposes constraints on the probabilities of **false alarms** (Type I errors) and **missed detections** (Type II errors). Let's see how:
 
@@ -173,6 +180,8 @@ Conv is the convex hull of a point set.
 
 ## Membership inference attack (MIA) and hypothesis testing
 
+---
+
 ### What are membership inference attacks (MIA)
 
 Membership inference attacks aim to distinguish if a given data sample(s) is in the training set of a target model. It's a typical binary distinguishing attack. MIA usually classifies a sample as "member" or "non-member" which represents whether the sample is training data or not. Typically, "Member" is a positive prediction, and "non-member" is a negative prediction.
@@ -251,7 +260,9 @@ In the next section, I'll introduce the basic concept of auditing differential p
 
 ---
 
-##Auditing differential privacy with MIA
+## Auditing differential privacy with MIA
+
+---
 
 Basically, auditing differential privacy aims to use membership inference attacks to attack the target model and get the TPR, and FPR on each sample. Then we compute the lower bounds in equations 13, 15, and one of 14 and 16. If one of the lower bounds is not valid, then the implementation of differential privacy may have some bugs.
 
