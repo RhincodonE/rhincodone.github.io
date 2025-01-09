@@ -6,6 +6,7 @@ description: In this post, I'll generally introduce the hypothesis testing inter
 tags: DP-hp
 categories: Differential privacy
 related_posts: false
+pretty_table: true
 ---
 
 # Hypothesis Interpretation of Differential Privacy
@@ -210,14 +211,12 @@ $$
 
 For simplicity we show the relationship between the confusion matrix and type I and II errors in the following table:
 
----
-| Metric                        | Definition                            | Error Type                    |
-|-------------------------------|---------------------------------------|-------------------------------|
-| **True Positive Rate (TPR)**  | $\text{TPR} = 1 - \text{FNR}$        | Correct detection $1-\beta$   |
-| **False Positive Rate (FPR)** | $\text{FPR} = P(M(D_0) \in S)$       | Type I Error $\alpha$         |
-| **False Negative Rate (FNR)** | $\text{FNR} = P(M(D_1) \in \bar{S})$ | Type II Error $\beta$         |
-| **True Negative Rate (TNR)**  | $\text{TNR} = 1 - \text{FPR}$        | Correct rejection $1-\alpha$  |
----
+| Metric                        | Definition                             | Error Type                      |
+|:------------------------------|:--------------------------------------:|--------------------------------:|
+| **True Positive Rate (TPR)**  | $$\text{TPR} = 1 - \text{FNR}$$        | Correct detection $$1-\beta$$   |
+| **False Positive Rate (FPR)** | $$\text{FPR} = P(M(D_0) \in S)$$       | Type I Error $$\alpha$$         |
+| **False Negative Rate (FNR)** | $$\text{FNR} = P(M(D_1) \in \bar{S})$$ | Type II Error $$\beta$$         |
+| **True Negative Rate (TNR)**  | $$\text{TNR} = 1 - \text{FPR}$$        | Correct rejection $$1-\alpha$$  |
 
 
 ### MIA audits implementation of differential privacy
