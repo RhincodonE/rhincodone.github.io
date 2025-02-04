@@ -19,4 +19,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a fourth-year Ph.D. student in UMBC, under the guidance of Dr.Keke Chen, specializing in areas such as differential privacy, confidential computation, machine unlearning, and more. Feel free to reach out if you have any relevant inquiries.
+I am a final-year Ph.D. student in UMBC, under the guidance of Dr.Keke Chen, specializing in areas such as differential privacy, confidential computation, machine unlearning, and more. Feel free to reach out if you have any relevant inquiries.
