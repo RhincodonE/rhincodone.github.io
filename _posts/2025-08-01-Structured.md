@@ -1,3 +1,12 @@
+---
+layout: post
+title: Structured Data Understanding — From LLMs to the Human Brain to a Biologically Inspired Implementation
+date: 2025-08-01
+description: 
+tags: metrics
+categories: Brain_LLM_En
+related_posts: false
+---
 
 # Structured Data Understanding — From LLMs to the Human Brain to a Biologically Inspired Implementation
 
