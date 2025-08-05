@@ -1,3 +1,13 @@
+---
+layout: post
+title: 分类任务的评价指标以及与MIA的关系
+date: 2025-08-01
+description: 本文主要介绍了LLM的结构化数据理解问题，并延伸思考至人脑仿生。
+tags: metrics
+categories: Brain_LLM
+related_posts: false
+---
+
 
 # 结构化数据理解问题 — 从 LLM 到人脑，再到仿生实现
 
